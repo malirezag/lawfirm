@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-grey-1: #818181;
+  --color-grey-2: #727272;
+  --color-grey-3: #36383e;
+  --color-grey-4: #28292e;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 50px #727272 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+input.light:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 50px #f9fafb inset !important;
+  -webkit-text-fill-color: #36383e !important;
+}
+
+html {
+  background-color: #e5e7eb;
+}
