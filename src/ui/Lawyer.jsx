@@ -8,7 +8,7 @@ import useDeleteLawyer from "../features/lawyers/useDeleteLawyer";
 function Lawyer({ lawyer }) {
   const { id } = lawyer;
   const [active, setActive] = useState(false);
-  const { deleteLawyer, isPending } = useDeleteLawyer();
+  const { deleteLawyer } = useDeleteLawyer();
   function handleDelete() {
     deleteLawyer(id);
   }

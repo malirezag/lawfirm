@@ -1,5 +1,5 @@
 function paginationItem() {
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
   return itemsPerPage;
 }
 
