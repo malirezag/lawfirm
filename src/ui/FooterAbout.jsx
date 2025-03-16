@@ -25,7 +25,7 @@ function FooterAbout() {
         <span className="pt-2 ">
           <GrLocation />
         </span>
-        <p>ستارخان روبروی باقرخان بن بست سپه پور پلاک 7 واحد 3</p>
+        <p>قیطریه جنب بوستان قیطریه پلاک 125 واحد 18</p>
       </div>
     </div>
   );

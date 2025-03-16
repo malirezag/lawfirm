@@ -20,7 +20,7 @@ function Lawyer({ lawyer }) {
       }}
       onMouseLeave={() => setActive(false)}
     >
-      <div className="text-gray-50 flex flex-col w-75 bg-grey-2 rounded-2xl  ">
+      <div className="text-gray-50 flex flex-col w-75 bg-grey-3 rounded-2xl  ">
         {/* delete modal */}
         <div
           className={`absolute backdrop-brightness-50
@@ -66,7 +66,7 @@ function Lawyer({ lawyer }) {
           alt={lawyer.name}
           className=" h-70 rounded-t-2xl object-center object-cover"
         />
-        <div className="flex flex-row justify-between px-3 py-4 text-xl items-center">
+        <div className="flex flex-row justify-between px-3 py-4 text-xl items-center ">
           <h3>{lawyer.name}</h3>
           <p className="text-base">{lawyer.phone} </p>
         </div>
