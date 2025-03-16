@@ -17,7 +17,7 @@ function Header({ children }) {
       />
       <header
         className={` bg-grey-3 md:bg-transparent md:flex-row absolute top-0 text-nowrap
-       text-gray-300 xl:text-xl lg:text-lg w-[70%] flex justify-between md:h-fit flex-col
+       text-gray-300 xl:text-xl lg:text-lg w-[70%] sm:w-[60%] flex justify-between md:h-fit flex-col
      md:items-center md:justify-between md:w-full px-3 md:px-8 xl:pt-3 md:pt-2 h-screen md:flex
     gap-4 ${isOpen ? "" : "hidden"}`}
       >
@@ -44,7 +44,7 @@ function Header({ children }) {
             بلاگ
           </NavButton>
 
-          <button className="flex">ارتباط با ما</button>
+          <button className="flex py-5">ارتباط با ما</button>
 
           {children}
         </div>

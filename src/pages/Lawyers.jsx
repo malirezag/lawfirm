@@ -8,6 +8,7 @@ import Pagination from "../ui/Pagination";
 import useGetLawyers from "../features/lawyers/useGetLawyers";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Sort from "../ui/Sort";
+import Footer from "../ui/Footer";
 
 function Lawyers() {
   const { lawyers, isLoading, count } = useGetLawyers();
@@ -17,16 +18,30 @@ function Lawyers() {
   if (lawyers?.length === 0) navigate(`/lawyers?page=${currentPage - 1}`);
 
   return (
-    <div className=" bg-grey-3 pb-20">
-      <p className="text-lg font-bold text-gray-300 text-center pt-3 ">
-        موسسه حقوقی اندیشمندان
-      </p>
+    <div className=" bg-grey-4">
       <Modal>
+        <Modal.Open opens="add">
+          <div className="flex justify-center items-center gap-3 pt-10 md:hidden">
+            <p className=" sm:text-2xl font-semibold text-gray-300 text-center md:hidden ">
+              موسسه حقوقی اندیشمندان
+            </p>
+            <button
+              className=" text-gray-50 text-sm border border-grey-1 bg-grey-4 py-2 items-center
+                px-2 rounded-md cursor-pointer flex flex-row gap-3 "
+            >
+              افزودن وکیل
+              <span>
+                <IoPersonAddOutline />
+              </span>
+            </button>
+          </div>
+        </Modal.Open>
+
         <Header>
           <Modal.Open opens="add">
             <div className="">
               <button
-                className=" text-gray-50 text-lg border border-grey-1 bg-grey-4 py-3 
+                className=" text-gray-50 text-lg border border-grey-1 bg-grey-4 py-2
                 px-3 rounded-md cursor-pointer flex flex-row items-center gap-3 ml-3 "
               >
                 افزودن وکیل
@@ -62,6 +77,7 @@ function Lawyers() {
           <AddLawyerForm />
         </Modal.Window>
       </Modal>
+      <Footer />
     </div>
   );
 }

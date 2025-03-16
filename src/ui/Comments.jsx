@@ -10,7 +10,7 @@ function Comments() {
   });
 
   return data?.length > 0 ? (
-    <div className="h-96 w-78 overflow-scroll overflow-x-hidden ">
+    <div className="h-96 overflow-scroll overflow-x-hidden ">
       {data?.map((item) => (
         <CommentRow key={item.id} data={item} />
       ))}
