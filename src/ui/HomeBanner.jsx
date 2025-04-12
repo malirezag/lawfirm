@@ -6,7 +6,7 @@ function HomeBanner() {
   return (
     <div
       className="rounded-b-xl bg-neutral-800 
-        h-screen md:justify-around flex 
+         md:justify-around flex sm:h-[80vh] pt-12
      items-center flex-col-reverse sm:flex-row sm:justify-around "
     >
       <div className="flex flex-col gap-10 md:gap-25">
