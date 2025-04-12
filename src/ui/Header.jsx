@@ -27,11 +27,11 @@ function Header({ children }) {
             onClick={() => setIsOpen((open) => !open)}
           />
 
-          <NavLink to="/home">
+          <NavLink to="/">
             <IoHomeOutline className="text-2xl md:block hidden" />
           </NavLink>
 
-          <NavButton type="small" to="/home">
+          <NavButton type="small" to="/">
             صفحه اصلی{" "}
           </NavButton>
           <NavButton type="small" to="/lawyers">
