@@ -34,7 +34,7 @@ function App() {
           <Route path="login" element={<LoginForm />} />
           <Route path="lawyers" element={<Lawyers />} />
           <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="home" />} />
+            <Route index element={<Navigate replace to="/" />} />
             <Route path="home" element={<Home />} />
             <Route path="updateaccount" element={<UpdateAccount />} />
             <Route path="signup" element={<SignUpForm />} />
