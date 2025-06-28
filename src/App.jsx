@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import ChatPage from "./pages/ChatPage";
@@ -31,7 +31,7 @@ function App() {
       <Toaster />
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="login" element={<LoginForm />} />
           <Route path="lawyers" element={<Lawyers />} />
           <Route element={<AppLayout />}>

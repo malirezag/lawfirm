@@ -18,13 +18,16 @@ function LoginForm() {
         onError: () => {
           setEmail(""), setPassword("");
         },
+        onSuccess: () => {
+          navigate("/");
+        },
       }
     );
   }
   return (
     <>
       <BackButton to="/" />
-      <div className="flex items-center h-screen w-90 justify-center mx-auto ">
+      <div className="flex items-center h-screen w-90 justify-center mx-auto flex-col ">
         <form
           onSubmit={handleSubmit}
           className="rounded-md  bg-gray-100
@@ -79,6 +82,11 @@ function LoginForm() {
             اگر حساب کاربری ندارید کلیک کنید
           </button>
         </form>
+        <p className="text-lg py-5">
+          جهت تست از ایمیل و رمز زیر استفاده کنید (از فیلترشکن استفاده کنید)
+        </p>
+        <p className="text-lg ">malirezag@gmail.com</p>
+        <p className="text-lg ">123123123</p>
       </div>
     </>
   );

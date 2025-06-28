@@ -10,7 +10,7 @@ function useAddLawyer() {
       toast.success("وکیل با موفقیت اضافه شد");
       queryclient.invalidateQueries({ active: true });
     },
-    onError: (error) => {
+    onError: () => {
       toast.error("عملیات با مشکل مواجه شد");
     },
   });

@@ -18,6 +18,7 @@ function Home() {
         <CommentForm />
       </div>
       <Footer />
+      {/* <CommentsComponent /> */}
     </>
   );
 }
